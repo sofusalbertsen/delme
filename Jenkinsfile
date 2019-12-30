@@ -7,10 +7,14 @@ pipeline {
   }
   stages {
     stage('one') {
+        steps{
       echo 'hi'
+        }
     }
     stage('two') {
+                steps{
       echo 'hi again'
+        }
     }
   }
 }
