@@ -71,7 +71,6 @@ pipeline {
       }
     }
     stage('component test') {
-      when { anyOf { branch 'master'; changeRequest() } }
       options {
         skipDefaultCheckout(true)
       }
