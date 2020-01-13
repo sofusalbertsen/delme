@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('clone down') {
         agent {
-        label 'host'
+        label 'swarm'
     }
       steps {
         stash(excludes: '.git', name: 'code')
