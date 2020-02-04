@@ -10,6 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: env
-      run: echo $GIT_COMMIT
-      env:
-        GIT_COMMIT: $GITHUB_SHA
+      run: $GIT_COMMIT=$GITHUB_SHA echo $GIT_COMMIT
